@@ -1,0 +1,26 @@
+image: juristr/angular-ci-build:1.0.0
+
+stages:
+  - build
+  - quality
+
+before_script:
+  - npm install
+
+app-build:
+  stage: build
+  artifacts:
+    paths:
+      - dist/
+  script:
+    - npm build
+
+linting:
+  stage: quality
+  script:
+    - npm run lint
+
+unit-tests:
+  stage: quality
+  script:
+    - npm run test
