@@ -10,6 +10,21 @@
         {{ 'app.title' | translate }}
       </div>
       <div fxFlex fxFill></div>
+      <div fxFlex="100px">
+        <mat-form-field>
+          <mat-select (valueChange)="onLanguageChange($event)">
+            <mat-option value="en">
+              English
+            </mat-option>
+            <mat-option value="it">
+              Italian
+            </mat-option>
+            <mat-option value="de">
+              German
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
       <div fxFlex="200px" fxLayoutAlign="end" class="avatar-col">
         Hi, unknown
       </div>
