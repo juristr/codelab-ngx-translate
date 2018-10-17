@@ -22,6 +22,7 @@ const materialModules = [
   MatIconModule,
   MatButtonModule,
   MatListModule,
+  MatSelectModule,
   FlexLayoutModule
 ];
 
