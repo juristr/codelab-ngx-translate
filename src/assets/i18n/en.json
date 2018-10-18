@@ -1,3 +1,4 @@
 {
-  "app.title": "Localization with ngx-translate"
+  "app.title": "Localization with ngx-translate",
+  "app.greeting": "Hi, {{ name }}!"
 }
