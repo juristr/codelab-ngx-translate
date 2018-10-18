@@ -14,4 +14,14 @@ export class AppComponent {
   onLanguageChange(lang) {
     this.translateService.use(lang);
   }
+
+  onShowGreeting() {
+    this.translateService.get('app.greeting', { name: 'Juri' }).subscribe(x => {
+      alert(x);
+    });
+
+    // alternatively
+    // const value = this.translateService.instant('app.greeting', { name: 'Juri' });
+    // alert(value);
+  }
 }
